@@ -23,4 +23,21 @@ h1 {
 
 .home-button {
   width: 150px;
+  text-align: center;
+}
+
+
+.floating{
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#next {
+  transition: all 300ms ease;
 }

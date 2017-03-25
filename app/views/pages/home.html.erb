@@ -117,11 +117,17 @@
         </ul>
       <!-- End of Slider -->
 
+      <div class="text-center">
+        <a href="#next">
+          <%= image_tag "arrow.svg", class: "floating arrow-img", width: 80 %>
+        </a>
+      </div>
+
       </div> <!-- end of banner-content -->
 
       <!-- Presentation of the concept  -->
 
-      <div class="banner-concept">
+      <div class="banner-concept" id="next">
 
         <h1>Food & Folks</h1>
         <p class="presentation-text">
@@ -131,21 +137,29 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-xs-3">
-              <%= image_tag "home/balu.jpg", class: "home-button"%>
-              <h4>Commandez un baluchon</h4>
+            <div class="col-xs-12 col-md-3">
+              <div class="text-center">
+                <%= image_tag "home/balu.jpg", class: "home-button"%>
+                <h4>Commandez un baluchon</h4>
+              </div>
             </div>
-            <div class="col-xs-3">
-              <%= image_tag "home/mag.jpg", class: "home-button"%>
-              <h4>Parcourez le magazine</h4>
+            <div class="col-xs-12 col-md-3">
+              <div class="text-center">
+                <%= image_tag "home/mag.jpg", class: "home-button"%>
+                <h4>Parcourez le magazine</h4>
+              </div>
             </div>
-            <div class="col-xs-3">
-              <%= image_tag "home/radio.jpg", class: "home-button"%>
-              <h4>Ecoutez les folks du monde</h4>
+            <div class="col-xs-12 col-md-3">
+              <div class="text-center">
+                <%= image_tag "home/radio.jpg", class: "home-button"%>
+                <h4>Ecoutez les folks du monde</h4>
+                </div>
             </div>
-            <div class="col-xs-3">
-              <%= image_tag "home/unit.jpg", class: "home-button"%>
-              <h4>Laissez vous séduire par les produits</h4>
+            <div class="col-xs-12 col-md-3">
+              <div class="text-center">
+                <%= image_tag "home/unit.jpg", class: "home-button"%>
+                <h4>Laissez vous séduire par les produits</h4>
+              </div>
             </div>
           </div>
         </div>
