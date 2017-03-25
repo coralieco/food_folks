@@ -1,2 +1,188 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="page-home">
+
+    <p class="warning text-center">Ceci est un site vitrine codé avec Rails sur base de mon ancienne plateforme e-commerce - En cours de construction</p>
+
+    <div class="navbar-ff">
+      <!-- Logo -->
+      <%= link_to root_path do %>
+        <%= image_tag "FF.png", class:"logo"%>
+      <% end %>
+
+      <!-- Right Navigation -->
+      <div class="navbar-ff-right hidden-xs hidden-sm text-center">
+
+        <!-- Text link -->
+        <a href="" class="navbar-ff-item navbar-ff-link">CONCEPT</a>
+
+        <a href="" class="navbar-ff-item navbar-ff-link">BALUCHONS DU MONDE</a>
+
+        <a href="" class="navbar-ff-item navbar-ff-link">MAGAZINE</a>
+
+        <a href="" class="navbar-ff-item navbar-ff-link">CONTACT</a>
+
+        <!-- Dropdown appearing on mobile only -->
+        <div class="navbar-ff-item hidden-md hidden-lg">
+          <div class="dropdown">
+            <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+            <ul class="dropdown-menu dropdown-menu-right navbar-ff-dropdown-menu">
+              <li><a href="#">Some mobile link</a></li>
+              <li><a href="#">Other one</a></li>
+              <li><a href="#">Other one</a></li>
+            </ul>
+          </div> <!-- End of dropdown -->
+        </div> <!-- End of navar-ff-item -->
+      </div> <!-- End of navar-ff-right -->
+    </div> <!-- End of navar-ff -->
+
+    <!-- End of Navbar -->
+
+    <div class="banner-content">
+
+      <!-- Beginning of Slider -->
+      <ul class="slides">
+          <input type="radio" name="radio-btn" id="img-1" checked />
+          <li class="slide-container">
+          <div class="slide">
+            <%= image_tag "slider/concept.jpg"%>
+              </div>
+          <div class="nav">
+            <label for="img-6" class="prev">&#x2039;</label>
+            <label for="img-2" class="next">&#x203a;</label>
+          </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-2" />
+          <li class="slide-container">
+              <div class="slide">
+                <%= image_tag "slider/mali.jpg"%>
+              </div>
+          <div class="nav">
+            <label for="img-1" class="prev">&#x2039;</label>
+            <label for="img-3" class="next">&#x203a;</label>
+          </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-3" />
+          <li class="slide-container">
+              <div class="slide">
+                <%= image_tag "slider/fdm.jpg"%>
+              </div>
+          <div class="nav">
+            <label for="img-2" class="prev">&#x2039;</label>
+            <label for="img-4" class="next">&#x203a;</label>
+          </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-4" />
+          <li class="slide-container">
+              <div class="slide">
+                <%= image_tag "slider/bresil.jpg"%>
+              </div>
+          <div class="nav">
+            <label for="img-3" class="prev">&#x2039;</label>
+            <label for="img-5" class="next">&#x203a;</label>
+          </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-5" />
+          <li class="slide-container">
+              <div class="slide">
+                <%= image_tag "slider/presentation.jpg"%>
+              </div>
+          <div class="nav">
+            <label for="img-4" class="prev">&#x2039;</label>
+            <label for="img-6" class="next">&#x203a;</label>
+          </div>
+          </li>
+
+          <input type="radio" name="radio-btn" id="img-6" />
+          <li class="slide-container">
+              <div class="slide">
+                <%= image_tag "slider/algerie.jpg"%>
+              </div>
+          <div class="nav">
+            <label for="img-5" class="prev">&#x2039;</label>
+            <label for="img-1" class="next">&#x203a;</label>
+          </div>
+          </li>
+
+          <li class="nav-dots">
+            <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+            <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+            <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+            <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+            <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+            <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+          </li>
+        </ul>
+      <!-- End of Slider -->
+
+      </div> <!-- end of banner-content -->
+
+      <!-- Presentation of the concept  -->
+
+      <div class="banner-concept">
+
+        <h1>Food & Folks</h1>
+        <p class="presentation-text">
+          Food & Folks permet de découvrir les spécialités traditionnelles du monde avec un coffret de produits d'épicerie fine du monde.
+          Un baluchon regroupe plusieurs produits typiques à cuisiner, et un carnet de culture avec recettes et conseils de locaux, une playlist. Tout ce qu'il faut pour s'initier à une culture !
+        </p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-3">
+              <%= image_tag "home/balu.jpg", class: "home-button"%>
+              <h4>Commandez un baluchon</h4>
+            </div>
+            <div class="col-xs-3">
+              <%= image_tag "home/mag.jpg", class: "home-button"%>
+              <h4>Parcourez le magazine</h4>
+            </div>
+            <div class="col-xs-3">
+              <%= image_tag "home/radio.jpg", class: "home-button"%>
+              <h4>Ecoutez les folks du monde</h4>
+            </div>
+            <div class="col-xs-3">
+              <%= image_tag "home/unit.jpg", class: "home-button"%>
+              <h4>Laissez vous séduire par les produits</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of banner-concept -->
+
+      <div class="banner-baluchon">
+        <h1>Les Baluchons du monde</h1>
+      </div>
+
+      <div class="banner-magazine">
+        <h1> Magazine </h1>
+          <p class="history-text">
+          </p>
+      </div>
+
+      <div class="banner-contact">
+        <h1> Qui suis-je ? </h1>
+          <p class="history-text">
+            Découvrir le monde authentiquement,
+
+            Mes meilleurs souvenirs de voyages sont ceux passés autour d'une table,
+            les moments partagés à cuisiner ensemble,
+            les découvertes de produits typiques parfois délicieux, surprenants, parfois étranges,
+            les spécialités que l’on déniche pour ramener dans sa valise pour partager avec ses proches au retour ou pour prolonger l’expérience.
+
+            Il n’y a pas de voyage sans cuisine, sans culture, sans rencontre. Quand je pense à mon voyage en Inde, c’est la cuisine indienne qui me vient à l’esprit ! Elle a fait partie intégrante de mon voyage, elle m’a plongée abyssalement dans la culture. L’Inde ne serait pas l’Inde sans sa cuisine.
+
+            Voilà, c’est de là qu’est né Food & Folks; retrouver ce qui fait la magie des voyages.
+          </p>
+      </div>
+
+
+
+
+
+
+
+</div> <!-- End of page-home -->
+
