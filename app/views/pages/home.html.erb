@@ -1,6 +1,6 @@
 <div class="page-home">
 
-    <p class="warning text-center">Ceci est un site vitrine codé avec Rails sur base de mon ancienne plateforme e-commerce - En cours de construction</p>
+    <p class="warning text-center">Site vitrine réalisé avec Rails pour présenter le concept de Food & Folks sur base de l'ancienne plateforme e-commerce sans la partie marchande</p>
 
     <div class="navbar-ff">
       <!-- Logo -->
@@ -12,13 +12,13 @@
       <div class="navbar-ff-right hidden-xs hidden-sm text-center">
 
         <!-- Text link -->
-        <a href="" class="navbar-ff-item navbar-ff-link">CONCEPT</a>
+        <a href="#concept" class="navbar-ff-item navbar-ff-link">CONCEPT</a>
 
-        <a href="" class="navbar-ff-item navbar-ff-link">BALUCHONS DU MONDE</a>
+        <a href="#baluchon" class="navbar-ff-item navbar-ff-link">BALUCHONS DU MONDE</a>
 
-        <a href="" class="navbar-ff-item navbar-ff-link">MAGAZINE</a>
+        <!-- <a href="" class="navbar-ff-item navbar-ff-link">MAGAZINE</a> -->
 
-        <a href="" class="navbar-ff-item navbar-ff-link">CONTACT</a>
+        <a href="#contact" class="navbar-ff-item navbar-ff-link">CONTACT</a>
 
         <!-- Dropdown appearing on mobile only -->
         <div class="navbar-ff-item hidden-md hidden-lg">
@@ -43,7 +43,7 @@
           <input type="radio" name="radio-btn" id="img-1" checked />
           <li class="slide-container">
           <div class="slide">
-            <%= image_tag "slider/concept.jpg"%>
+            <%= image_tag "slider/mali.jpg"%>
               </div>
           <div class="nav">
             <label for="img-6" class="prev">&#x2039;</label>
@@ -54,7 +54,7 @@
           <input type="radio" name="radio-btn" id="img-2" />
           <li class="slide-container">
               <div class="slide">
-                <%= image_tag "slider/mali.jpg"%>
+                <%= image_tag "slider/concept.jpg"%>
               </div>
           <div class="nav">
             <label for="img-1" class="prev">&#x2039;</label>
@@ -117,86 +117,135 @@
         </ul>
       <!-- End of Slider -->
 
-      <div class="text-center">
-        <a href="#next">
-          <%= image_tag "arrow.svg", class: "floating arrow-img", width: 80 %>
+<!--       <div class="text-center">
+        <a href="#concept">
+          <%#= image_tag "arrow.svg", class: "floating arrow-img", width: 80 %>
         </a>
-      </div>
+      </div> -->
 
       </div> <!-- end of banner-content -->
 
-      <!-- Presentation of the concept  -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
 
-      <div class="banner-concept" id="next">
+          <!-- Presentation of the concept  -->
 
-        <h1>Food & Folks</h1>
-        <p class="presentation-text">
-          Food & Folks permet de découvrir les spécialités traditionnelles du monde avec un coffret de produits d'épicerie fine du monde.
-          Un baluchon regroupe plusieurs produits typiques à cuisiner, et un carnet de culture avec recettes et conseils de locaux, une playlist. Tout ce qu'il faut pour s'initier à une culture !
-        </p>
+            <div class="banner-concept" id="concept">
 
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-3">
-              <div class="text-center">
-                <%= image_tag "home/balu.jpg", class: "home-button"%>
-                <h4>Commandez un baluchon</h4>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-3">
-              <div class="text-center">
-                <%= image_tag "home/mag.jpg", class: "home-button"%>
-                <h4>Parcourez le magazine</h4>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-3">
-              <div class="text-center">
-                <%= image_tag "home/radio.jpg", class: "home-button"%>
-                <h4>Ecoutez les folks du monde</h4>
+              <h1>Food & Folks</h1>
+              <p class="presentation-text">
+                Food & Folks permet de découvrir les spécialités traditionnelles du monde avec un coffret de produits d'épicerie fine du monde.
+                Un baluchon regroupe plusieurs produits typiques à cuisiner, et un carnet de culture avec recettes et conseils de locaux, une playlist. Tout ce qu'il faut pour s'initier à une culture !
+              </p>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-md-3">
+                    <div class="text-center">
+                      <%= image_tag "home/balu.jpg", class: "home-button"%>
+                      <h4>Commandez un baluchon</h4>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="text-center">
+                      <%= image_tag "home/mag.jpg", class: "home-button"%>
+                      <h4>Parcourez le magazine</h4>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="text-center">
+                      <%= image_tag "home/radio.jpg", class: "home-button"%>
+                      <h4>Ecoutez les folks du monde</h4>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="text-center">
+                      <%= image_tag "home/unit.jpg", class: "home-button"%>
+                      <h4>Laissez vous séduire par les produits</h4>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-3">
-              <div class="text-center">
-                <%= image_tag "home/unit.jpg", class: "home-button"%>
-                <h4>Laissez vous séduire par les produits</h4>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- End of banner-concept -->
+            <!-- End of banner-concept -->
+          </div> <!-- End of col-xs-12 -->
 
-      <div class="banner-baluchon">
-        <h1>Les Baluchons du monde</h1>
-      </div>
+          <div class="col-xs-12">
 
-      <div class="banner-magazine">
+            <div class="banner-baluchon" id="baluchon">
+              <h1>Les Baluchons</h1>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="text-center">
+                      <%= image_tag "baluchon/italie.jpg", class: "card-balu"%>
+                      <h4>Voyage en Italie</h4>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="text-center">
+                      <%= image_tag "baluchon/mali.jpg", class: "card-balu"%>
+                      <h4>De Dakar à Bamako</h4>
+                    </div>
+                  </div>
+                </div> <!-- end of row -->
+              </div> <!-- end of container -->
+
+              <div class="text-center">
+                <a href="#" class="btn-medium">Voir plus!</a>
+              </div>
+
+            </div> <!-- banner baluchon -->
+          </div> <!-- End of col-xs-12 -->
+
+<!--       <div class="banner-magazine">
         <h1> Magazine </h1>
           <p class="history-text">
           </p>
-      </div>
-
-      <div class="banner-contact">
-        <h1> Qui suis-je ? </h1>
-          <p class="history-text">
-            Découvrir le monde authentiquement,
-
-            Mes meilleurs souvenirs de voyages sont ceux passés autour d'une table,
-            les moments partagés à cuisiner ensemble,
-            les découvertes de produits typiques parfois délicieux, surprenants, parfois étranges,
-            les spécialités que l’on déniche pour ramener dans sa valise pour partager avec ses proches au retour ou pour prolonger l’expérience.
-
-            Il n’y a pas de voyage sans cuisine, sans culture, sans rencontre. Quand je pense à mon voyage en Inde, c’est la cuisine indienne qui me vient à l’esprit ! Elle a fait partie intégrante de mon voyage, elle m’a plongée abyssalement dans la culture. L’Inde ne serait pas l’Inde sans sa cuisine.
-
-            Voilà, c’est de là qu’est né Food & Folks; retrouver ce qui fait la magie des voyages.
-          </p>
-      </div>
+      </div> -->
 
 
+          <div class="col-xs-12">
+            <div class="banner-contact" id="contact">
+              <h1> Qui suis-je ? </h1>
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-md-2">
+                    <div class="text-center">
+                    <%= image_tag "table2.jpg", class: "card-contact" %>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-8">
+                    <p class="contact-text text-center">
+                      Mes meilleurs souvenirs de voyages sont ceux passés autour d'une table, <br>
+                      les moments partagés à cuisiner ensemble, <br>
+                      les découvertes de produits typiques parfois délicieux, surprenants, parfois étranges, <br>
+                      les spécialités que l’on déniche pour ramener dans sa valise pour partager avec ses proches au retour ou pour prolonger l’expérience. <br>
+                      <br>
+                      Il n’y a pas de voyage sans cuisine, sans culture, sans rencontre. Quand je pense à mon voyage en Inde, c’est la cuisine indienne qui me vient à l’esprit. Elle a fait partie intégrante de mon voyage en me plongeant dans la culture. <br>
+                      L’Inde ne serait pas l’Inde sans sa cuisine. <br>
+                      <br>
+                      Voilà, c’est de là qu’est né Food & Folks, retrouver ce qui fait la magie des voyages.
+                      <br>
+                      <br>
+                      La société n'existe plus aujourd'hui, vous pouvez tout de même me contacter <br> <br> <a href="https://www.linkedin.com/in/coralie-collignon-22984319/" target="_blank" class="btn-medium">Par là</a>
+                    </p>
+                  </div>
 
+                  <div class="col-xs-12 col-md-2">
+                    <div class="text-center">
+                    <%= image_tag "table.jpg", class: "card-contact" %>
+                    </div>
+                  </div>
 
+            </div> <!-- End of row -->
+          </div> <!-- End of container -->
+        </div> <!-- End of banner -->
+      </div> <!-- End of col-xs-12 -->
 
-
-
+    </div> <!-- End of principal row -->
+  </div><!-- End of principal container -->
 </div> <!-- End of page-home -->
 

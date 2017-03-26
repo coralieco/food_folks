@@ -5,8 +5,18 @@
 
 h1 {
   text-align: center;
-  font-family: 'Waiting for the Sunrise', cursive;
-  font-size:50px;
+  font-family: 'Bad Script', cursive;
+  font-size:40px;
+}
+
+h4 {
+  // font-family: 'Waiting for the Sunrise', cursive;
+  font-family: 'Bad Script', cursive;
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
 .warning {
@@ -26,7 +36,6 @@ h1 {
   text-align: center;
 }
 
-
 .floating{
   animation-name: floating;
   -webkit-animation-name: floating;
@@ -40,4 +49,12 @@ h1 {
 
 #next {
   transition: all 300ms ease;
+}
+
+.presentation-text {
+  margin: 65px 135px;
+}
+
+.contact-text {
+  margin: 45px;
 }

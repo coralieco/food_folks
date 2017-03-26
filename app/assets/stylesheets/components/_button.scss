@@ -1,0 +1,20 @@
+.btn-medium {
+  background-color: $brand-color;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: lighter;
+  margin-top: 40px;
+
+}
+.btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  background-color: #fff;
+  color: $brand-color;
+  border: 1px solid $brand-color;
+}
+
+.home-button {
+
+}
