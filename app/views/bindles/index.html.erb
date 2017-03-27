@@ -1,0 +1,24 @@
+<div class="text-center">
+  <%= link_to root_path do %>
+    <%= image_tag "FF.png", class:"logo-pages"%>
+  <% end %>
+</div>
+
+<div class="container">
+  <div class="row">
+  <% @bindles.each do |bindle| %>
+    <div class="col-xs-12 col-md-4">
+      <div class="index-card text-center">
+        <div class="card">
+          <%= image_tag "baluchon/italie.jpg", class: "card"%>
+          <%#= image_tag %>
+        </div>
+        <div class="card-description">
+            <h2><%= bindle.name %></h2>
+            <p>Découvrez .... <%= bindle.country %></p>
+        </div>
+      </div> <!-- end of index-card -->
+    </div> <!-- end of col -->
+    <% end %>
+  </div> <!-- end of row -->
+</div> <!-- end of container -->
