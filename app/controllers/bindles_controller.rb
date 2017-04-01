@@ -6,6 +6,7 @@ class BindlesController < ApplicationController
   end
 
   def show
+    @bindle = Bindle.find(params[:id])
   end
 
   def new

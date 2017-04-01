@@ -13,6 +13,11 @@
   margin:25px;
 }
 
+.card-show {
+  width: 440px;
+  border-radius: 5px;
+}
+
 
 // Design card of index
 
@@ -22,6 +27,7 @@
   background-size: cover !important;
   color: white;
   position: relative;
+  border-radius: 5px;
 }
 
 .card-category {

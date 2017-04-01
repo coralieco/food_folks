@@ -1,0 +1,30 @@
+<div class="text-center">
+  <%= link_to root_path do %>
+    <%= image_tag "FF.png", class:"logo-pages"%>
+  <% end %>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="card-show">
+        <%= image_tag @bindle.picture, class: "card-show"%>
+      </div>
+    </div> <!-- fin col-md-6 -->
+
+    <div class="col-xs-12 col-md-6">
+      <div class="show-description text-center">
+        <h3><%= @bindle.name %></h3>
+        <h4>Baluchon <%= @bindle.country %></h4>
+        <p>
+          <i class="fa fa-quote-left" aria-hidden="true"></i>
+          <%= @bindle.description %>
+          <i class="fa fa-quote-right" aria-hidden="true"></i>
+        </p>
+        <p><%= @bindle.price %> €</p>
+      </div>
+    </div> <!-- fin col-md-6 -->
+
+  </div> <!-- fin row -->
+</div> <!-- fin container -->

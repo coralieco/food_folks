@@ -6,19 +6,22 @@
 
 <div class="container">
   <div class="row">
-  <% @bindles.each do |bindle| %>
-    <div class="col-xs-12 col-md-4">
-      <div class="index-card text-center">
-        <div class="card">
-          <%= image_tag "baluchon/italie.jpg", class: "card"%>
-          <%#= image_tag %>
-        </div>
-        <div class="card-description">
-            <h2><%= bindle.name %></h2>
-            <p>Découvrez .... <%= bindle.country %></p>
-        </div>
-      </div> <!-- end of index-card -->
-    </div> <!-- end of col -->
+
+    <% @bindles.each do |bindle| %>
+      <div class="col-xs-12 col-md-4">
+        <div class="index-card text-center">
+          <%= link_to bindle_path(bindle) do %>
+            <div class="card">
+              <%= image_tag bindle.picture, class: "card"%>
+            </div>
+          <% end %>
+          <div class="card-description">
+              <h2><%= bindle.name %></h2>
+              <p><%= bindle.country %></p>
+          </div>
+        </div> <!-- end of index-card -->
+      </div> <!-- end of col -->
     <% end %>
+    </div>
   </div> <!-- end of row -->
 </div> <!-- end of container -->
